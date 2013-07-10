@@ -1,0 +1,54 @@
+
+body{
+	background: $bodyBackground;
+	font: $baseFontSize $baseFontFamily;
+	line-height: $baseLineHeight;
+	color: $grayDark;
+	}
+
+a{
+  text-decoration: none;
+  font-size: 14px;
+  &:hover{
+    color: $orangeYellow;
+  }
+}
+h1,h2,h3,h4, a{
+	@include blueKreonFont;
+	}	
+
+.page-title{
+	h1,h2,h3,h4{
+		@include blueKreonFont;
+		}	
+	h1{
+		font-size: 28px;
+		line-height: 35px;
+		}
+
+	h2{
+		font-size: 24px;
+		line-height: 30px;
+		}
+	h3{
+		font-size: 21px;
+		line-height: 25px;
+		margin: 10px 0px;
+		padding: 10px 30px;
+		}
+	}
+
+button.button span{
+  @include blueKreonFont;
+  border-color: $orangeYellow;
+  @include border-radius(8px);
+  @include box-shadow($orange, 2px, 2px);
+  height: auto;
+  line-height: 20px;
+  padding: 8px;
+
+}
+
+ul.links{
+  padding-left: 0;
+}

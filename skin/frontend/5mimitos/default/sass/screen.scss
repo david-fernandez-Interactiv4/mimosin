@@ -1,0 +1,25 @@
+
+/* Interactiv4 responsive compass project for Magento
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ */
+
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/box-sizing";
+@import "compass/css3/background-clip";
+
+@import "styles.css";
+@import "reset.css";
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "layout";
+@import "menus";
+@import "catalog";
+@import "header";
+@import "page";
+@import "footer";
+@import "responsive";
+
+

@@ -1,0 +1,31 @@
+
+@mixin blueKreonFont{
+	font-family:$altFontFamily;
+	font-weight: $headingsFontWeight;
+	color: $headingsColor;
+	}
+
+@mixin clearer{
+  &:after, &:before{
+    display:table;
+    content: "";
+    height: 0;
+  }
+  &:after{
+    clear:both;
+  }
+}
+
+@mixin col($colSize, $position){
+
+  @include box-sizing(border-box);
+  width: ( ( ( ( $refWidth -  ( ( $numCols - 1 )  * $refOffset ) ) / $refWidth) / $colSize ) / $refWidth ) * 100;
+  margin: 0 ( ( $refOffset / $refWidth ) * 100 ) 0 0;
+  padding: 0;
+  display: block;
+  background: none;
+  float: if($position, $position, left);
+  @include clearer;
+}
+
+

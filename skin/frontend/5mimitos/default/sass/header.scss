@@ -1,0 +1,57 @@
+
+
+.header{
+    > .col2-set{
+      border-bottom: 1px solid $grayLighter;
+      margin-bottom: 20px;
+    }
+    .links{
+      color: $grayLight;
+      margin: 0;
+
+      li{
+        padding: 10px;
+        background: none;
+        border-right: 1px solid $grayLighter;
+        a{
+          font-size: 13px;
+          font-family: $baseFontFamily;
+          color: $grayLight;
+          text-decoration: none;
+          padding-right: 10px;
+          img {
+            margin-right: 10px;
+          }
+        }
+        &.first a{
+          border-right: 1px solid $gray;
+          color: $orangeDark;
+        }
+        &.last a{
+          font-family: $altFontFamily;
+          color: $orangeDark;
+        }
+        &.first, &.last{
+          border:none;
+        }
+      }
+    }
+    .logo{
+      padding:0;
+      margin:0;
+    }
+    .form-search{
+      position:static;
+      width:100%;
+      input.input-text{
+        background: url('/skin/frontend/5mimitos/default/images/icons/lupa.png') 100% 5px no-repeat;
+        min-height: 30px;
+        width:100%;
+        border: 1px solid $grayLighter;
+        width:100%;
+      }
+      button.button{
+        float:right;
+      }
+    }
+}

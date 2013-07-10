@@ -1,0 +1,85 @@
+
+/*
+ * Magento layout components and grid
+ */
+
+.wrapper{
+  width: $wrapperWidth;
+  margin: 0 auto;
+  background: none;
+}
+
+.main-container{
+  background: none;
+  .main{
+    width: 100%;
+    @include clearer;
+  }
+}
+.col-left, .col-right{
+  @include col(3, left);
+}
+.col-main{
+  @include col(9, left);
+}
+
+.col3-layout{
+  .col-main{
+    @include col(9, left);
+  }
+  .col-wrapper{
+    @include col(9, left);
+    @include clearer;
+    .col-main{
+      @include col(9, right);
+      }
+  }
+}
+
+.header-container .header, .footer-container .footer, .col2-set, .col3-set, col4-set{
+    width: 100%;
+    @include clearer;
+  }
+
+.col2-set{
+  .col-1{
+    @include col(6, left);
+  }
+  .col-2{
+    @include col(6, left);
+  }
+  .col-narrow{
+    @include col(3, left);
+  }
+  .col-wide{
+    @include col(9, left);
+  }
+}
+
+.col3-set{
+  .col-1{
+    @include col(4, left);
+  }
+  .col-2{
+    @include col(4, left);
+  }
+  .col-3{
+    @include col(4, left);
+  }
+}
+
+.col4-set{
+  .col-1{
+    @include col(3, left);
+  }
+  .col-2{
+    @include col(3, left);
+  }
+  .col-3{
+    @include col(3, left);
+  }
+  .col-3{
+    @include col(3, left);
+  }
+}
+
