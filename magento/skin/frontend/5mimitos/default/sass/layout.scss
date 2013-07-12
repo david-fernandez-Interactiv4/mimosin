@@ -1,0 +1,76 @@
+
+/*
+ * Interactiv4's Magento layout components and grid.
+ * Resizes components from screen sizes between $minWidth to Infinity.
+ */
+
+.wrapper{
+  width: $wrapperWidth;
+  margin: 0 auto;
+  background: none;
+  min-width: $minWidth;
+}
+
+.main-container{
+  background: none;
+  .main{
+    width: 100%;
+    @include clearer;
+  }
+}
+
+.header-container .header, .footer-container .footer, .col2-set, .col3-set, .col4-set{
+    width: 100%;
+    @include clearer;
+  }
+
+.col-left, .col-right{
+  @include col(3);
+}
+
+.col-main{
+  @include col(9);
+}
+
+.col3-layout{
+  .col-main{
+    @include col(9);
+  }
+  .col-wrapper{
+    @include col(9);
+    @include clearer;
+    margin:0;
+    .col-left{
+	margin:0;
+    }	
+    .col-main{
+      @include col(9, right);
+      }
+  }
+}
+
+.col2-set{
+  .col-narrow{
+    @include col(3);
+  }
+  .col-wide{
+    @include col(9);
+  }
+}
+
+@for $i from 1 through 4{
+	.col-#{$i}-set{
+		@for $j from 1 through $i{
+			.col-#{$j}{
+				@include col($i / $numCols);
+			}
+		}
+	}
+}
+
+@for $i from 1 through $numCols{
+	.col-#{$i}{
+		@include col($i);
+	}
+}
+
