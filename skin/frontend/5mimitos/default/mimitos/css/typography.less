@@ -1,0 +1,53 @@
+@import "variables.less";
+
+h1,h2,h3,h4{
+	color:@blueFont;
+}
+
+ul.inline{
+	display:block;
+	li{
+		display:block;
+		float:left;
+		margin-left: 10px;
+	}
+	a{
+		display:inline-block;
+	}
+	.clearfix;
+}
+
+.orangeLetters{ 
+	color: @orange;
+}
+
+.greyLetters{
+	color: @lightGreyFont;
+}
+
+.mainBar{
+	.nav{
+		a,a:visited{
+			color: @blueFont;
+		}
+		a:active{
+			color: @orange;
+			&:after{
+				content:"V";
+				z-index:20;
+			}
+		}
+	}
+}
+
+aside{
+	p{
+		color:@orange;
+	}
+	a, a:active, a:visited{
+		color:@blueFont;
+	}
+	a:hover{
+		color:@lightBlue;
+	}
+}

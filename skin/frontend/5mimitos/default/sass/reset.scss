@@ -1,0 +1,14 @@
+
+.header-container{
+  background:none;
+  margin:0;
+  padding:0;
+  border-bottom: 0;
+  .form-search, .form-search input.input-text{
+    @extend .header-container;
+  }
+  .header{
+    background: none;
+    padding:0;
+  }
+}

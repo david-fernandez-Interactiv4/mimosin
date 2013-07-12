@@ -1,0 +1,281 @@
+html,
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a,
+article,
+header,
+section {
+  padding: 0;
+  margin: 0;
+}
+a,
+a.visited,
+a.active,
+a.hover {
+  color: black;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #1d9cd7;
+}
+ul.inline {
+  display: block;
+  *zoom: 1;
+}
+ul.inline li {
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+ul.inline a {
+  display: inline-block;
+}
+ul.inline:before,
+ul.inline:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+ul.inline:after {
+  clear: both;
+}
+.orangeLetters {
+  color: #f77f47;
+}
+.greyLetters {
+  color: #bec7c9;
+}
+.mainBar .nav a,
+.mainBar .nav a:visited {
+  color: #1d9cd7;
+}
+.mainBar .nav a:active {
+  color: #f77f47;
+}
+.mainBar .nav a:active:after {
+  content: "V";
+  z-index: 20;
+}
+aside p {
+  color: #f77f47;
+}
+aside a,
+aside a:active,
+aside a:visited {
+  color: #1d9cd7;
+}
+aside a:hover {
+  color: #75d1f6;
+}
+.container {
+  *zoom: 1;
+  width: 100%;
+}
+.container:before,
+.container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.container:after {
+  clear: both;
+}
+.row {
+  width: 100%;
+  *zoom: 1;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row:after {
+  clear: both;
+}
+.span1 {
+  float: left;
+  display: block;
+  width: 2.127659574468085%;
+  margin-left: 2.564102564102564%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 30px;
+}
+.span1:first-child {
+  margin-left: 0px;
+}
+.span2 {
+  float: left;
+  display: block;
+  width: 14.52991452991453%;
+  margin-left: 2.564102564102564%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 30px;
+}
+.span2:first-child {
+  margin-left: 0px;
+}
+.span3 {
+  float: left;
+  display: block;
+  width: 23.076923076923077%;
+  margin-left: 2.564102564102564%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 30px;
+}
+.span3:first-child {
+  margin-left: 0px;
+}
+.span4 {
+  float: left;
+  display: block;
+  width: 31.623931623931625%;
+  margin-left: 2.564102564102564%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 30px;
+}
+.span4:first-child {
+  margin-left: 0px;
+}
+.span6 {
+  float: left;
+  display: block;
+  width: 48.717948717948715%;
+  margin-left: 2.564102564102564%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 30px;
+}
+.span6:first-child {
+  margin-left: 0px;
+}
+.span9 {
+  float: left;
+  display: block;
+  width: 74.35897435897436%;
+  margin-left: 2.564102564102564%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 30px;
+}
+.span9:first-child {
+  margin-left: 0px;
+}
+.span12 {
+  float: left;
+  display: block;
+  width: 100%;
+  margin-left: 2.564102564102564%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 30px;
+}
+.span12:first-child {
+  margin-left: 0px;
+}
+.html {
+  font-size: 100%;
+}
+.body {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  font-family: Verdana, 'Helvetica Neue', Helvetica, Arial;
+  z-index: -1000;
+}
+img {
+  min-height: 15px;
+  align: middle;
+  height: auto;
+}
+.container {
+  height: 240px;
+}
+.headerBars {
+  float: left;
+  display: block;
+  width: 16.666666666666664%;
+  margin-left: 2.564102564102564%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 30px;
+  margin-left: 0;
+}
+.headerBars:first-child {
+  margin-left: 0px;
+}
+.pageBody {
+  float: left;
+  display: block;
+  width: 66.66666666666666%;
+  margin-left: 2.564102564102564%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 30px;
+  margin-left: 0;
+}
+.pageBody:first-child {
+  margin-left: 0px;
+}
+.loginBar {
+  height: 50px;
+}
+.loginBar .span4,
+.loginBar .span6 {
+  margin-top: 12px;
+}
+.mainBar {
+  height: 70px;
+  padding-right: 10px;
+  margin-left: 0px;
+}
+.subMenuBar {
+  background: #e27526;
+  height: 70px;
+  margin-left: 0px;
+}
+.navBar {
+  background: #f6f6f6;
+  height: 50px;
+  margin-left: 0px;
+}
+aside {
+  background: #f2fdff;
+}
