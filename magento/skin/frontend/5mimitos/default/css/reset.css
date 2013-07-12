@@ -1,0 +1,12 @@
+/* line 2, ../sass/reset.scss */
+.header-container, .header-container .form-search, .header-container .form-search input.input-text {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 0;
+}
+/* line 10, ../sass/reset.scss */
+.header-container .header, .header-container .form-search input.input-text .header {
+  background: none;
+  padding: 0;
+}

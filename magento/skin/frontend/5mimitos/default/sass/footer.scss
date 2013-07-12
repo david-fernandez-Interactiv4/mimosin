@@ -1,0 +1,13 @@
+
+.footer-container{
+  background: $blueAqua;
+  .footer{
+    padding:0;
+    a{
+      color: $headingsColor;
+    }
+    address{
+      color: $grayLighter;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+
+.navbar .expander{
+  visibility:hidden;
+  position: absolute;
+}
+.navbar.collapse .expander{
+  visibility: visible;
+  position: static;
+}
+
+.navbar.collapse .nav li{
+  float:none;
+  margin-left:0;
+}
+
+.navbar .nav:after{
+  display:table;
+  content:"";
+  clear:both;
+}
+
+.navbar .nav{
+  padding:10px;
+  list-style:none;
+}
+.navbar .nav li:first-child{
+  margin-left:0;
+}
+.navbar .nav li {
+  margin-left: 10px;
+  float:left;
+}
+
+.nav-container, .nav{
+  background:none;
+  margin:0;
+  padding:0;
+  border-bottom: 0;
+}
+
+.nav{
+  @include blueKreonFont;
+  a{
+    @include blueKreonFont;
+    font-size: 15px;
+    text-align: left;
+  }
+  a:active{
+    color: $orangeDark;
+  }
+}
